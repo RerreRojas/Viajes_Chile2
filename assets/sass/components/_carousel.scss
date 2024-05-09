@@ -1,19 +1,13 @@
-.carousel {
-  height: 300px;
-  border-radius: 50%;
-}
-@media (min-width: 768px) {
-  .carousel {
-    height: 500px;
+
+ header{
+  height:300px;
+  border-radius: 25px
+ }
+
+ @media (min-width: 768px) {
+  header {
+    height: 700px;
+    border-radius: 25px
+  
   }
 }
-.carousel-item {
-    height: 300px;
-    border-radius: 30%;
-  }
-  @media (min-width: 768px) {
-    .carousel-item {
-      height: 500px;
-      border-radius: 30%;
-    }
-  }

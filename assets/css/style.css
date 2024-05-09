@@ -11856,10 +11856,15 @@ html {
 
 body {
   background-color: #000000;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 hr {
-  color: bisque;
+  color: rgb(245, 238, 229);
+  border-bottom: 3px solid;
+  width: 100%;
+  margin: 10px;
 }
 
 body {
@@ -11925,25 +11930,15 @@ body {
   text-align: center;
 }
 
-.carousel {
+header {
   height: 300px;
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 @media (min-width: 768px) {
-  .carousel {
-    height: 500px;
-  }
-}
-.carousel-item {
-  height: 300px;
-  border-radius: 30%;
-}
-
-@media (min-width: 768px) {
-  .carousel-item {
-    height: 500px;
-    border-radius: 30%;
+  header {
+    height: 700px;
+    border-radius: 25px;
   }
 }
 .col-md-4 {

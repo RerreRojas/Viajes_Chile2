@@ -32,47 +32,44 @@
     <script defer src="./assets/js/index.js"></script>
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top"
-        style="background-color: transparent"
-      >
-        <div class="container">
-          <a class="navbar-brand w-75" href="#" style="padding-left: 1rem"
-            ><img
-              class="col-1 d-inline-flex"
-              src="./assets/img/viajes.svg"
-              alt="logo-agencia"
-            />
-            Viajes Chile</a
-          >
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: transparent"
+    >
+      <div class="container">
+        <a class="navbar-brand w-75" href="#" style="padding-left: 1rem"
+          ><img
+            class="col-1 d-inline-flex"
+            src="./assets/img/viajes.svg"
+            alt="logo-agencia"
+          />
+          Viajes Chile</a
+        >
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse container"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" aria-current="page" href="#">Inicio</a>
-              <a class="nav-link" href="#section1">Quiénes Somos</a>
-              <a class="nav-link" href="#section2">Destacados</a>
-              <a class="nav-link" href="#section3">Contacto</a>
-            </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#section1">Quiénes Somos</a>
+            <a class="nav-link" href="#section2">Destacados</a>
+            <a class="nav-link" href="#section3">Contacto</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <header class="container">
       <!--CAROUSEL-->
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="h-100 w-100 carousel slide">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -95,25 +92,25 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner container rounded-4">
-          <div class="carousel-item active">
+        <div class="carousel-inner w-100 h-100">
+          <div class="carousel-item w-100 h-100 active">
             <img
-              src="./assets/img/carousel1.jpg"
-              class="d-block w-100 rounded-4"
+              src="./assets/img/carousel1.jpg "
+              class="d-block h-100 w-100 object-fit-cover rounded-4"
               alt="carousel1"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item w-100 h-100">
             <img
               src="./assets/img/carousel2.jpg"
-              class="d-block w-100 rounded-4"
+              class="d-block h-100 w-100 object-fit-cover rounded-4"
               alt="carousel2"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item w-100 h-100">
             <img
               src="./assets/img/carousel3.jpg"
-              class="d-block w-100 rounded-4"
+              class="d-block h-100 w-100 object-fit-cover rounded-4"
               alt="carousel3"
             />
           </div>
@@ -140,9 +137,11 @@
     </header>
     <main>
       <!--QUIENES SOMOS-->
-      <div class="container">
+      <div id="section1" class="container">
         <div class="text-center">
-          <h2 class="text-info" style="font-weight: 400">Quiénes somos</h2>
+          <h2 class="text-info mt-4" style="font-weight: 400">
+            ¿Quiénes somos?
+          </h2>
           <hr />
         </div>
         <section class="row d-flex align-items-center">
@@ -179,12 +178,12 @@
         </section>
       </div>
       <!--DESTACADOS-->
-      <section class="container">
-        <h2 class="text-center text-info" style="font-weight: 400">
+      <section id="section2" class="container">
+        <h2 class="text-center text-info mt-4" style="font-weight: 400">
           Destacados
         </h2>
         <hr />
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
           <div class="col">
             <div class="card mb-3" style="max-width: 540px">
               <div class="row g-0">
@@ -328,10 +327,10 @@
       </div>
 
       <!--CONTACTOS-->
-      <section class="container">
+      <section id="section3" class="container">
         <h2
           style="font-weight: 400"
-          class="mt-3 mb-3 d-flex justify-content-center text-center text-info"
+          class="mt-4 mb-3 d-flex justify-content-center text-center text-info"
           id="contacto"
         >
           Contactos
@@ -342,7 +341,12 @@
             <form class="p-3 mx-auto">
               <div class="row col-12 mb-3">
                 <div class="col-6">
-                  <label for="inputName" class="form-label text-info" style="font-weight: 400">Nombre</label>
+                  <label
+                    for="inputName"
+                    class="form-label text-info"
+                    style="font-weight: 400"
+                    >Nombre</label
+                  >
                   <i
                     class="fa-solid fa-circle-info text-info"
                     data-bs-toggle="tooltip"
@@ -350,6 +354,7 @@
                     data-bs-title="Nombre Completo"
                   ></i>
                   <input
+                
                     type="text"
                     class="form-control"
                     aria-describedby="nameHelp"
@@ -359,15 +364,20 @@
                 </div>
 
                 <div class="col-6 mb-3">
-                  <label for="inputName" class="form-label">Email</label>
+                  <label
+                    for="inputName"
+                    class="form-label text-info"
+                    style="font-weight: 400"
+                    >Email</label
+                  >
                   <i
-                    class="fa-solid fa-circle-info"
+                    class="fa-solid fa-circle-info text-info"
                     data-bs-toggle="tooltip"
                     data-bs-placement="top"
                     data-bs-title="Correo Electronico"
                   ></i>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     aria-describedby="nameHelp"
                     placeholder="Email"
@@ -377,9 +387,14 @@
               </div>
 
               <div class="mb-3">
-                <label for="mensajeArea" class="form-label">Mensaje</label>
+                <label
+                  for="mensajeArea"
+                  class="form-label text-info"
+                  style="font-weight: 400"
+                  >Mensaje</label
+                >
                 <i
-                  class="fa-solid fa-circle-info"
+                  class="fa-solid fa-circle-info text-info"
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   data-bs-title="Escribe tu mensaje"
@@ -397,6 +412,7 @@
                   type="checkbox"
                   value=""
                   id="miCheckbox"
+                  required
                 />
                 <label class="form-check-label" for="miCheckbox">
                   <a
@@ -423,22 +439,34 @@
           </div>
 
           <div class="col-6">
-            <div class="mt-5">
+            <div
+              class="mt-5 text-info"
+              style="font-weight: 400; font-size: 0.75rem"
+            >
               <i class="fa-solid fa-phone fa-2xl"></i>
-              <span class="ms-3"> +56 987654321</span>
+              <span class="ms-1"> +56987654321</span>
             </div>
-            <div class="mt-5">
+            <div
+              class="mt-5 text-info"
+              style="font-weight: 400; font-size: 0.6rem"
+            >
               <i class="fa-solid fa-envelope fa-2xl"></i>
-              <span class="ms-3"> Contacto@viajeschile.com</span>
+              <span class="ms-1"> contacto@viajeschile.com</span>
             </div>
-            <div class="mt-5">
+            <div
+              class="mt-5 text-info"
+              style="font-weight: 400; font-size: 0.75rem"
+            >
               <i class="fa-brands fa-linkedin fa-2xl"></i>
-              <span class="ms-3"> ViajesChile</span>
+              <span class="ms-1"> ViajesChile</span>
             </div>
 
-            <div class="mt-5">
+            <div
+              class="mt-5 text-info"
+              style="font-weight: 400; font-size: 0.75rem"
+            >
               <i class="fa-brands fa-square-instagram fa-2xl"></i>
-              <span class="ms-3"> Viajes_Chile</span>
+              <span class="ms-1"> Viajes_Chile</span>
             </div>
           </div>
         </div>
